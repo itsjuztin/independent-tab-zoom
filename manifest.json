@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Independent Tab Zoom",
+  "version": "1.0.1",
+  "description": "Adjusts zoom levels per tab independently without altering other tabs on the same domain.",
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "src/background/service_worker.js"
+  },
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "Independent Tab Zoom"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
